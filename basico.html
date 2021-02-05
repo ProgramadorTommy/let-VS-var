@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos JavaScript</title>
+</head>
+<body>
+  <h1>Fundamentos JavaScript</h1>
+  <script>
+    var hola = 'Hola Mundo';
+    let  hello = 'Hello World';
+    console.log(hello);
+    console.log(hola);
+    console.log(window);
+    console.log(window.hola);
+    console.log(window.hello);
+
+    //Ambito de bloque
+
+// Esto es un - comentario de una line
+
+/*
+esto
+es
+un
+comentario
+de
+varias
+lineas
+*/
+//var -mala pratica *******************************************************
+console.log('************** var *******************');
+var musica = 'Rock';
+console.log('Variable Musica antes del Bloque' , musica);
+
+
+{
+  var musica = 'Pop';
+  console.log('Variable Musica dentro del Bloque' , musica)
+
+}
+
+    console.log('Variable Musica despues del  Bloque', musica);
+  
+    console.log('**************let *********')
+
+    let musica2= 'Rock';
+      console.log('Variable Musica antes del Bloque', musica2);
+
+
+      {
+        let musica2 = 'Pop';
+        console.log('Variable Musica dentro del Bloque', musica2)
+
+      }
+
+      console.log('Variable Musica despues del  Bloque', musica2);
+      
+
+
+
+  </script>
+</body>
+</html>
